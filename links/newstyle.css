@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    padding: 10%;
+    font-size: 2rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: aliceblue;
+}
+
+main{
+    opacity:0.5;
+    font-size: 32px;
+}
+
+a{
+    text-decoration: underline;
+    cursor :all-scroll;
+    color:black;
+}
+
+a:visited{
+    color:rgb(10, 121, 121);
+}
+a:hover, a.focus{
+    color:darkorange;
+}
+a:active{
+    color:burlywood;
+}

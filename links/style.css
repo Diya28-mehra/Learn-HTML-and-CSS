@@ -1,0 +1,31 @@
+
+
+header{
+    font-size:64px;
+    font-weight: bolder;
+}
+
+
+body {
+    padding: 20%;
+    font-size: 2rem;
+    color: rgb(105, 3, 105);
+    background-color: papayawhip;
+    font-style:oblique;
+}
+
+p{
+    line-height: 2.0;
+    text-align:justify;
+    font-weight: lighter;
+    text-indent: 2em;
+    letter-spacing: 0.1em;
+    font-style: oblique;
+    word-spacing: 0.5;
+}
+input,button{
+    font: inherit;
+}
+
+/* Can also search from Roboto about different font-style and family*/
+
