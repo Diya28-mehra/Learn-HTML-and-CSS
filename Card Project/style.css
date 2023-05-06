@@ -1,0 +1,129 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{scroll-behavior: smooth;}
+
+body{
+    font: 1.5rem "Nunito", sans-serif;
+    min-height: 100vh;
+    background-color:#475569;
+    background-image:radial-gradient(whitesmoke,#475569);
+    display:flex;
+    flex-direction:column;
+}
+
+img{
+    display:block;
+    max-width: 100%;
+    height: auto;
+}
+
+.nowrap{
+    white-space:nowrap;
+}
+
+header,footer{
+    position:sticky;
+    background-color:#1e293b;
+    color:whitesmoke;
+    text-align:center;
+}
+
+header{
+    top:0;
+}
+
+nav{
+    background-color: #fff;
+    color: #000;
+    text-shadow: #000 2rem;
+    padding: 1rem;
+    border-bottom: 2px solid #000;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+nav a, nav a:visited{
+    color:#000;
+}
+
+nav a:hover,nav a:focus{
+    color:hsla(0, 0%, 20%, 0.313);
+}
+
+footer{
+    bottom:0;
+}
+
+main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.card{
+    scroll-margin-top: 8rem;
+    width: 30%;
+    background-color:#cbd5e1;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.card figure{
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+.card img{
+    border: 5px double #333;
+    border-radius:50%;
+}
+
+.card figcaption{
+    font-weight: bolder;
+    font-size: 4rem;
+    margin:1rem;
+    text-align:center;
+}
+
+
+@media screen and (min-width: 1000px){
+    nav{
+        display:none;
+    }
+    .card figure{
+        flex-flow: column-reverse;
+    }
+    .card figcaption{
+        margin: 0.1em 0;
+    }
+    .card p{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .card{
+        width: min(100%,400px);
+    }
+    .card:nth-child(2){
+        order:-1;
+    }
+}
+
+@media screen and (min-width:1500px){
+    .card{
+        width:40%;
+    }
+}
+
