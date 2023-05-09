@@ -47,7 +47,7 @@ nav{
     justify-content: space-evenly;
 }
 
-nav a, nav a:visited{
+nav link, nav a:visited{
     color:#000;
 }
 
